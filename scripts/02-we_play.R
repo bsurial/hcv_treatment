@@ -56,6 +56,12 @@ full %>%
 
 
 
+full %>% 
+  ggplot(aes(x = born)) +
+  geom_density()
+
+ggsave(here("graphs", "02-age_density.png"), 
+       dpi = 300, bg = "white")
   
 
 # Write data --------------------------------------------------------------
