@@ -34,4 +34,4 @@ all <- map(all, clean_dta)
 
 # Write into processed folder
 walk2(all, names, ~write_rds(.x, str_c("processed/", .y, ".rds")))
-write_rds(all, "processed/full_shcs.rds")
+
